@@ -9,7 +9,7 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 #define S3 7
 #define sensorOut 8
 
-int frequency = 0;
+int red,green= 0;
 
 void setup() {
   
