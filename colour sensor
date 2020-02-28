@@ -42,11 +42,13 @@ void loop() {
   green = pulseIn(sensorOut, LOW);
   delay(100);
   
+  //adjust the values accordingly
   if (red > 12 && red < 30   &&  grn > 40 && grn < 70    &&  blu > 33 && blu < 70)
   {   color = "RED";
       lcd.print("Stop");
       //enter function to stop the bot
   }
+  
   else if (red > 50 && red < 95   &&  grn > 35 && grn < 70    &&  blu > 45 && blu < 85)  
   { color = "GREEN";
     lcd.print("GO");
